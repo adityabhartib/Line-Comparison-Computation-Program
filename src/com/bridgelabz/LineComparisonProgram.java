@@ -27,12 +27,16 @@ public class LineComparisonProgram {
         Double lengthOfLine1 = Math.sqrt(Math.pow(x2-x1, 2) + Math.pow(y2-y1,2));
         double lengthOfLine2 = Math.sqrt(Math.pow(p2-p1, 2) + Math.pow(q2-q1, 2));
 
-        double result = lengthOfLine1.compareTo(lengthOfLine2);
-        if(result > 0)
-            System.out.println("Length of First end points is Greater than Length of Second end Points");
-        else if(result < 0)
-            System.out.println("Length of First end points is Less than Length of Second end Points");
+        System.out.println("------------------------------------------");
+        System.out.println("Length of First Line is :"+ lengthOfLine1);
+        System.out.println("------------------------------------------");
+        System.out.println("length of Second Line :"+ lengthOfLine2);
+        System.out.println("------------------------------------------");
+
+        boolean ans = lengthOfLine1.equals(lengthOfLine2);
+        if(ans)
+            System.out.println("Both Lines are Equal");
         else
-            System.out.println("Both lines are Equal");
+            System.out.println("Both Lines are not Equal");
     }
 }
