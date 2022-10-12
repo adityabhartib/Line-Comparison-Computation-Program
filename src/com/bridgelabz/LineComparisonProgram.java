@@ -16,6 +16,6 @@ public class LineComparisonProgram {
         int y2 = scanner.nextInt();
 
         double lenghtOfLine = Math.sqrt(Math.pow(x2-x1, 2) + Math.pow(y2-y1,2));    // calculate the length of line
-        System.out.printf("Length of Line is : %.2f %n", lenghtOfLine);
+        System.out.print("Length of Line is :"+ lenghtOfLine);
     }
 }
